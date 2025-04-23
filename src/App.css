@@ -21,6 +21,13 @@ body   {
 
 }
 
+#root{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
 a { /* to style the anchortags */
   color: var(--link-color);
   text-decoration: none;
@@ -49,6 +56,11 @@ nav .right a {
   font-size: 18px; 
   font-weight: 600;
   margin: 0 10px;
+}
+
+nav .right .menu {
+  font-weight: lighter;
+  color: rgb(86, 62, 62);
 }
 
 nav .right a:last-child {   /* to style the last anchor tag */   
@@ -201,6 +213,7 @@ a[download]:hover {
 .skills-section .skill-component{
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .skills-section .cell:hover {
@@ -417,9 +430,10 @@ form button:hover {
   font-weight: bold;
   letter-spacing: 1px;
   box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.1); /* Adds shadow */
-  position: relative;
+  position: sticky;
   margin-top: 50px;
   overflow: hidden;
+  bottom:0px;
 }
 
 /* Animation for Thank You text */
@@ -498,7 +512,11 @@ form button:hover {
 
   nav .right a span{
       display: none;
+  }
 
+  nav .right .menu span{
+    font-weight: 100;
+    color:red !important;
   }
   nav .right a:last-child {
       color: var(--text-color);

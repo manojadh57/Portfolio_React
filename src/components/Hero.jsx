@@ -3,6 +3,7 @@ import manoj from "../assets/manoj.jpg";
 import HeroComponent from "./HeroComponent";
 import { Icons } from "react-toastify";
 import HeroTitle from "./HeroTitle";
+import DefaultLayout from "../layout/DefaultLayout";
 
 const Hero = () => {
   const heroList = [
@@ -25,7 +26,7 @@ const Hero = () => {
   ];
 
   return (
-    <section className="hero-section">
+    <section className="hero-section" id="hero">
       <div className="text">
         <HeroTitle text="Hey! 👋😊 I am Manoj Adhikari" />
         <p>

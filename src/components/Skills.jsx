@@ -1,6 +1,7 @@
 import React from "react";
 import HeroTitle from "./HeroTitle";
 import SkillComponent from "./SkillComponent";
+import DefaultLayout from "../layout/DefaultLayout";
 
 const Skills = () => {
   const skillList = [
